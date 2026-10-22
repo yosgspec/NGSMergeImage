@@ -18,7 +18,7 @@ jobs:
       - name: Create release archive
         env:
           RELEASE_TAG: ${{ github.ref_name }}
-        run: zip -r "ngs-merge-image-${RELEASE_TAG}.zip" ngs_merge_img.bat samples README.md
+        run: zip -r "ngs-merge-image-${RELEASE_TAG}.zip" ngs_merge_img.bat min.bat '$samples' README.md
 
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2

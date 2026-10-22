@@ -1,0 +1,13 @@
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+*.XnViewSort
+$samples/**
+!$samples/**/
+!$samples/**/*.jpg
+!$samples/**/*.jpeg
+!$samples/**/*.png
+!$samples/**/*.webp
+!$samples/**/*.bmp
